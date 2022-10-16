@@ -77,10 +77,10 @@ export default function TechnologyPage() {
         <div className={styles.containerTitle}>
           <h1>{language ? "Technology" : "Tecnologias"}</h1>
           <section className={styles.containerStack}>
-            {stackObg.map((icon) => (
-              <div key={icon.icon} className={styles.boxStack}>
-                <span>{icon.icon}</span>
-                <h4>{icon.text}</h4>
+            {stackObg.map((item, index) => (
+              <div key={index} className={styles.boxStack}>
+                <span>{item.icon}</span>
+                <h4>{item.text}</h4>
               </div>
             ))}
           </section>
