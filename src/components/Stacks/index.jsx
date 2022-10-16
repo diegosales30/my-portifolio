@@ -1,6 +1,6 @@
 import Image from "next/image";
 import styles from "./Technology.module.scss";
-import gifImg from "../../assets/code2.gif";
+import gifImg from "../../assets/code3.gif";
 import {
   SiChakraui,
   SiCss3,
@@ -77,14 +77,14 @@ export default function TechnologyPage() {
         <div className={styles.containerTitle}>
           <h1>{language ? "Technology" : "Tecnologias"}</h1>
           <section className={styles.containerStack}>
-            <div className={styles.boxStack}>
-              {stackObg.map((icon) => (
-                <p key={icon.icon}>{icon.icon}</p>
-              ))}
-              {/* <SiHtml5 size={"7em"} color={"#f5612d"} />
-              <h4>HTML</h4> */}
-            </div>
+            {stackObg.map((icon) => (
+              <div key={icon.icon} className={styles.boxStack}>
+                <span>{icon.icon}</span>
+                <h4>{icon.text}</h4>
+              </div>
+            ))}
           </section>
+          <p> {language ? "and more..." : "dentre outras..."}</p>
         </div>
         <div className={styles.containerImg}>
           <span>
