@@ -1,7 +1,7 @@
 import styles from "./styles.module.scss";
+import Link from "next/link";
 import { LanguageContext } from "./../../Providers/languages/index";
 import { useContext } from "react";
-
 import { ModalContext } from "./../../Providers/modal/index";
 
 const ModalMenu = () => {
@@ -12,10 +12,21 @@ const ModalMenu = () => {
     <div>
       {open ? (
         <ul className={styles.menu}>
-          <li>{language ? "Home" : "Inicio"}</li>
-          <li>{language ? "About" : "Sobre"}</li>
-          <li> {language ? "Technology" : "Tecnologia"}</li>
-          <li> {language ? "Project" : "Projeto"} </li>
+          <Link href="/">
+            <li>{language ? "Home" : "Inicio"}</li>
+          </Link>
+
+          <Link href="/about">
+            <li>{language ? "About" : "Sobre"}</li>
+          </Link>
+
+          <Link href="/technology">
+            <li> {language ? "Technology" : "Tecnologia"}</li>
+          </Link>
+
+          <Link href="/project">
+            <li> {language ? "Project" : "Projeto"} </li>
+          </Link>
         </ul>
       ) : null}
     </div>

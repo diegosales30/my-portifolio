@@ -1,16 +1,17 @@
 import Head from "next/head";
+import AboutMe from "../components/About";
 
-import HomePage from "../components/Home";
-
-export default function Home() {
+const About = () => {
   return (
     <div>
       <Head>
-        <title>Home</title>
+        <title>About</title>
         <meta name="description" content="I'm web Developer" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <HomePage />
+      <AboutMe />
     </div>
   );
-}
+};
+
+export default About;

@@ -5,6 +5,7 @@ import gifImg from "../../assets/code1.gif";
 import { MdKeyboardArrowRight } from "react-icons/md";
 import { LanguageContext } from "./../../Providers/languages/index";
 import { useContext } from "react";
+import Link from "next/link";
 export default function HomePage() {
   const pt = (
     <span>
@@ -34,7 +35,7 @@ export default function HomePage() {
               ? "I'm Brazilian 🇧🇷 , I'm passionate about technology and programming."
               : "Sou Brasileiro 🇧🇷 , e sou apaixonado por tecnologia e programação"}
           </p>
-          {language ? en : pt}
+          <Link href="/about">{language ? en : pt}</Link>
         </div>
         <div className={styles.containerImg}>
           <span>

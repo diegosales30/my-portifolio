@@ -1,5 +1,5 @@
 import styles from "./Header.module.scss";
-
+import Link from "next/link";
 import { LanguageContext } from "./../../Providers/languages/index";
 import { useContext } from "react";
 import MenuHamburguer from "../MenuHamburguer";
@@ -12,17 +12,31 @@ const Header = () => {
     <div className={styles.container}>
       <div className={styles.containerHeader}>
         <ul className={styles.menufirst}>
-          <li>{language ? "Home" : "Inicio"}</li>
-          <li>{language ? "About" : "Sobre"}</li>
-          <li> {language ? "Technology" : "Tecnologia"}</li>
-          <li> {language ? "Project" : "Projeto"} </li>
+          <Link href="/">
+            <li>{language ? "Home" : "Inicio"}</li>
+          </Link>
+
+          <Link href="/about">
+            <li>{language ? "About" : "Sobre"}</li>
+          </Link>
+
+          <Link href="/technology">
+            <li> {language ? "Technology" : "Tecnologia"}</li>
+          </Link>
+
+          <Link href="/project">
+            <li> {language ? "Project" : "Projeto"} </li>
+          </Link>
         </ul>
         <div className={styles.model}>
           <MenuHamburguer />
         </div>
 
         <ul className={styles.menusecond}>
-          <li> {language ? "Contact" : "Contato"}</li>
+          <Link href="/contact">
+            <li> {language ? "Contact" : "Contato"}</li>
+          </Link>
+
           <button onClick={translate}>{language ? "🇺🇸" : "🇧🇷"}</button>
         </ul>
       </div>
