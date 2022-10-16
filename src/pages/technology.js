@@ -6,7 +6,7 @@ const Technology = () => {
       <Head>
         <title>Tech</title>
         <meta name="description" content="I'm web Developer" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="./favicon_io/favicon.ico" />
       </Head>
       <TechnologyPage />
     </div>

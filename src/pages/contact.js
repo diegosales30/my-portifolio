@@ -1,16 +1,17 @@
 import Head from "next/head";
+import ContactPage from "../components/Contact";
 
-import HomePage from "../components/Home";
-
-export default function Home() {
+const Contact = () => {
   return (
     <div>
       <Head>
-        <title>Home</title>
+        <title>Contact</title>
         <meta name="description" content="I'm web Developer" />
         <link rel="icon" href="./favicon_io/favicon.ico" />
       </Head>
-      <HomePage />
+      <ContactPage />
     </div>
   );
-}
+};
+
+export default Contact;
