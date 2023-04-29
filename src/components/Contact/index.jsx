@@ -37,7 +37,7 @@ export default function ContactPage() {
                 <SiLinkedin />
               </span>
               <a
-                href="https://www.linkedin.com/in/diego-felipe-js/"
+                href="https://www.linkedin.com/in/diegosales30/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
