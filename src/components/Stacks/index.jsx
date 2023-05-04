@@ -12,7 +12,7 @@ import {
   SiRedux,
   SiStyledcomponents,
 } from "react-icons/si";
-import { SiMaterialui, SiNodedotjs, SiTypescript } from "react-icons/si";
+import { SiMaterialui, SiNodedotjs, SiTypescript, SiTailwindcss, SiFirebase } from "react-icons/si";
 import { TbBrandNextjs } from "react-icons/tb";
 import { FaSass, FaGulp } from "react-icons/fa";
 
@@ -64,6 +64,18 @@ const stackObg = [
   {
     icon: <FaSass />,
     text: "Sass",
+  },
+  {
+    icon: <SiTailwindcss />,
+    text: "Tailwind",
+  },
+  {
+    icon: <SiNodedotjs />,
+    text: "NodeJs",
+  },
+  {
+    icon: <SiFirebase />,
+    text: "Firebase",
   },
 ];
 

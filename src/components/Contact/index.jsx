@@ -73,7 +73,7 @@ export default function ContactPage() {
                 <SiInstagram />
               </span>
               <a
-                href="https://www.instagram.com/dihcode/"
+                href="https://www.instagram.com/felip.codes/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -84,7 +84,7 @@ export default function ContactPage() {
         </div>
         <div className={styles.containerImg}>
           <span>
-            <Image src={gifImg} alt="Vercel Logo" width={480} height={360} />
+            <Image src={gifImg} alt="git programador" width={480} height={360} />
           </span>
         </div>
       </main>
