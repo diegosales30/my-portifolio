@@ -23,12 +23,12 @@ export default function HomePage() {
     <div className={styles.container}>
       <main className={styles.main}>
         <div className={styles.containerTitle}>
-          <h3>{language ? "I'm Diego." : "Me chamo Diego."}</h3>
+          <h3>{language ? "I'm Diego." : "Sou o Diego."}</h3>
 
           <h1>
             {language
-              ? "I'm Front end Developer React-Js"
-              : "Sou Desenvolvedor Front end React-Js"}
+              ? "I'm Developer React.Js | Next.js | C# Asp.net | SQL"
+              : "Sou Desenvolvedor React.Js | Next.js | C# Asp.net | SQL"}
           </h1>
           <p>
             {language
@@ -39,7 +39,7 @@ export default function HomePage() {
         </div>
         <div className={styles.containerImg}>
           <span>
-            <Image src={gifImg} alt="Vercel Logo" width={480} height={360} />
+            <Image src={gifImg} alt="gif garoto programando" width={480} height={360} />
           </span>
         </div>
       </main>
