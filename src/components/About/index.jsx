@@ -13,8 +13,10 @@ export default function AboutMe() {
           <h1>{language ? "About me" : "Sobre mim"}</h1>
           <h3>
             {language
-              ? "Hello, welcome! My name is Diego Sales and I work as a Software Developer. I am from Manaus, Amazonas and I have a great appreciation for nature, being an enthusiast of environmental preservation. In addition, I am passionate about technology and programming, always looking for new opportunities to expand my knowledge in this area. I love learning new technologies, but I also enjoy playing the guitar with friends. Currently, I develop applications in Front-end React.js and Next.js and mobile with Expo, and I am studying C# Asp.net and SQL to become a Full-stack Developer."
-              : "Olá, seja bem-vindo! Meu nome é Diego Sales e atuo como Desenvolvedor de Software. Sou natural de Manaus, Amazonas e tenho grande apreço pela natureza, sendo um entusiasta da preservação do meio ambiente. Além disso, sou apaixonado por tecnologia e programação, buscando sempre novas oportunidades para expandir meus conhecimentos nessa área. Adoro aprender novas tecnologias, mas também gosto de tocar violão com amigos. Atualmente, desenvolvo aplicações em Front-end Reac.js e Next.js e mobile com Expo e estou estudando C# Asp.net e SQL para me tornar um desenvolvedor Full-stack."}
+              ? `Passionate technology enthusiast FullStack Developer specialized in Front-End and emerging technologies. Experienced in web and mobile projects.
+              I keep myself constantly updated, seeking to learn and stay abreast of the latest market trends in Javascript, React.js, Next.js, Typescript, Node.js/Express, MySQL, Sass, Git, Github, Expo, and Tailwind, among other modern technologies.
+              Deepening my knowledge in Node.js and Express to enhance backend skills and create comprehensive APIs, efficiently integrating front-end and back-end.`
+              : "Desenvolvedor FullStack apaixonado por tecnologia, especializado em Front-End. Experiente em projetos web e mobile. Mantenho-me constantemente atualizado, buscando aprender e acompanhar as últimas tendências do mercado em Javascript, React.js, Next.js, Typescript, Node.js/Express, MySQL, Sass, Git, Github, Expo e Tailwind, entre outras tecnologias modernas. Aprofundando meus conhecimentos em Node.js e Express para aprimorar habilidades no backend e criar APIs abrangentes, integrando eficientemente front-end e back-end."}
           </h3>
         </div>
         <div className={styles.containerImg}>

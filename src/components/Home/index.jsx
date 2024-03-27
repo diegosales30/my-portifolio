@@ -27,8 +27,8 @@ export default function HomePage() {
 
           <h1>
             {language
-              ? "I'm Developer React.Js | Next.js | C# Asp.net | SQL"
-              : "Sou Desenvolvedor React.Js | Next.js | C# Asp.net | SQL"}
+              ? "I'm Developer React.Js | Next.Js | Node.Js Express | MySQL"
+              : "Sou Desenvolvedor React.Js | Next.Js | Node.Js Express | MySQL"}
           </h1>
           <p>
             {language
